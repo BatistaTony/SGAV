@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E1F5464-B101-4552-94F8-A1C52EE9F27A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGAV</RootNamespace>
+    <AssemblyName>SGAV</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>..\..\..\..\..\Downloads\Bunifu UI WinForms 1.11.1.0\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ajuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ajuda.Designer.cs">
+      <DependentUpon>ajuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="appavDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appavDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="bilhetes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilhetes.Designer.cs">
+      <DependentUpon>bilhetes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastrar_bilhete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrar_bilhete.Designer.cs">
+      <DependentUpon>cadastrar_bilhete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cadastrar_funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cadastrar_funcionario.Designer.cs">
+      <DependentUpon>cadastrar_funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agente_de_viagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agente_de_viagem.Designer.cs">
+      <DependentUpon>agente_de_viagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="contablista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="contablista.Designer.cs">
+      <DependentUpon>contablista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardAdmin.Designer.cs">
+      <DependentUpon>dashboardAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="definicoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="definicoes.Designer.cs">
+      <DependentUpon>definicoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="director_geral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="director_geral.Designer.cs">
+      <DependentUpon>director_geral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar_bilhete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar_bilhete.Designer.cs">
+      <DependentUpon>editar_bilhete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editar_funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editar_funcionario.Designer.cs">
+      <DependentUpon>editar_funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="factura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="factura.Designer.cs">
+      <DependentUpon>factura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="funcionarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="funcionarios.Designer.cs">
+      <DependentUpon>funcionarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RelVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelVenda.Designer.cs">
+      <DependentUpon>RelVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelVendaTotal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RelVendaTotal.Designer.cs">
+      <DependentUpon>RelVendaTotal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StockBaixo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StockBaixo.Designer.cs">
+      <DependentUpon>StockBaixo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vendas.Designer.cs">
+      <DependentUpon>vendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vender.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vender.Designer.cs">
+      <DependentUpon>vender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verRelatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verRelatorio.Designer.cs">
+      <DependentUpon>verRelatorio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ajuda.resx">
+      <DependentUpon>ajuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilhetes.resx">
+      <DependentUpon>bilhetes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastrar_bilhete.resx">
+      <DependentUpon>cadastrar_bilhete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastrar_funcionario.resx">
+      <DependentUpon>cadastrar_funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agente_de_viagem.resx">
+      <DependentUpon>agente_de_viagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="contablista.resx">
+      <DependentUpon>contablista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardAdmin.resx">
+      <DependentUpon>dashboardAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="definicoes.resx">
+      <DependentUpon>definicoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="director_geral.resx">
+      <DependentUpon>director_geral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar_bilhete.resx">
+      <DependentUpon>editar_bilhete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editar_funcionario.resx">
+      <DependentUpon>editar_funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="factura.resx">
+      <DependentUpon>factura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="funcionarios.resx">
+      <DependentUpon>funcionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RelVenda.resx">
+      <DependentUpon>RelVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelVendaTotal.resx">
+      <DependentUpon>RelVendaTotal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockBaixo.resx">
+      <DependentUpon>StockBaixo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vendas.resx">
+      <DependentUpon>vendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vender.resx">
+      <DependentUpon>vender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verRelatorio.resx">
+      <DependentUpon>verRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="appavDataSet.xsc">
+      <DependentUpon>appavDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appavDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appavDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appavDataSet.xss">
+      <DependentUpon>appavDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\funcionarios.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

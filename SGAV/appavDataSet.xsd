@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="appavDataSet" targetNamespace="http://tempuri.org/appavDataSet.xsd" xmlns:mstns="http://tempuri.org/appavDataSet.xsd" xmlns="http://tempuri.org/appavDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="appavConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="appavConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGAV.Properties.Settings.GlobalReference.Default.appavConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="newfacturaTableAdapter" GeneratorDataComponentClassName="newfacturaTableAdapter" Name="newfactura" UserDataComponentName="newfacturaTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="appavConnectionString (Settings)" DbObjectName="appav.newfactura" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT `id`, `AGENTE DE VIAGEM`, `nome`, `sexo`, `email`, `num_passaporte`, `telefone1`, `telefone2`, `nacionalidade`, `destino`, `categoria`, `horario`, `data_partida`, `local_partida`, `voo`, `codigobi`, `preco_venda`, `data_venda` FROM `appav`.`newfactura`</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings />
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="appavDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="appavDataSet" msprop:Generator_UserDSName="appavDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="newfactura" msprop:Generator_TableClassName="newfacturaDataTable" msprop:Generator_TableVarName="tablenewfactura" msprop:Generator_TablePropName="newfactura" msprop:Generator_RowDeletingName="newfacturaRowDeleting" msprop:Generator_RowChangingName="newfacturaRowChanging" msprop:Generator_RowEvHandlerName="newfacturaRowChangeEventHandler" msprop:Generator_RowDeletedName="newfacturaRowDeleted" msprop:Generator_UserTableName="newfactura" msprop:Generator_RowChangedName="newfacturaRowChanged" msprop:Generator_RowEvArgName="newfacturaRowChangeEvent" msprop:Generator_RowClassName="newfacturaRow">
+          <xs:complexType>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
